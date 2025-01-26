@@ -36,7 +36,7 @@ const formSchema = z.object({
 })
 import BackButton from "@/components/BackButton";
 
-interface PostEditFormProps {
+interface PostEditFormProps  {
     params: {
         id: string;
     }
