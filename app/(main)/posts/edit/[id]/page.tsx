@@ -36,12 +36,12 @@ const formSchema = z.object({
 })
 import BackButton from "@/components/BackButton";
 
-interface PostEditFormProps  {
-    params: {
-        id: string;
-    }
-}
-const PostEditPage = ({params}: PostEditFormProps) => {
+// interface PostEditFormProps  {
+//     params: {
+//         id: string;
+//     };
+// }
+const PostEditPage = ({ params }: { params: { id: string } }) => {
     const {toast} = useToast();
 
     const post = posts.find((post) => post.id === params.id);
@@ -54,7 +54,7 @@ const PostEditPage = ({params}: PostEditFormProps) => {
         author: post?.author || "",
         date: post?.date || "",
      },
-   })
+   });
 
    const handleSubmit = (data: z.infer<typeof formSchema>) => {
     toast({
