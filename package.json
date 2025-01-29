@@ -8,6 +8,10 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "cache": {
+    "node_modules": ".cache/node_modules",
+    "nextjs": ".cache/nextjs"
+  },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "@radix-ui/react-avatar": "^1.1.2",
