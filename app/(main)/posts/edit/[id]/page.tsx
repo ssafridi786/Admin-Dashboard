@@ -119,7 +119,7 @@ const PostEditPage: React.FC<PostEditPageProps> = ({ params }) => {
         </form>
       </Form>
     </>
-  )
+  ) 
 }
 
 export default PostEditPage
